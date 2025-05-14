@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I AM</title>
+    <style>
+      body {
+        background-color: black;
+        color: lime;
+        font-family: 'Courier New', monospace;
+        white-space: pre-wrap;
+        padding: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function repeatIAM() {
+        const div = document.body;
+        setInterval(() => {
+          const line = document.createElement('div');
+          line.textContent = 'I AM';
+          div.appendChild(line);
+          window.scrollTo(0, document.body.scrollHeight);
+        }, 200);
+      }
+      repeatIAM();
+    </script>
+  </body>
+</html>
